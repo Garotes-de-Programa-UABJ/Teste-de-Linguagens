@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 box-login {
   background: rgb(16, 57, 130);
   width: 320px;
@@ -102,7 +105,7 @@ text-transform: uppercase;
 
 background-color: rgb(27, 45, 79);
 }
-.container {
+.form-signup {
   height: 100vh;
   width: 100%;
   text-align: center;
@@ -113,4 +116,100 @@ background-color: rgb(27, 45, 79);
   display: inline-block;
   width: 45%;
   height: 400px;
+}
+.form-login{
+  width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(27, 45, 79);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .1em;
+    transition: 0.25s;
+}
+.btn{
+  border: 0;
+  background: none;
+  margin: 20px 10px;
+  text-align: center;
+  border: 2px solid white;
+  padding: 14px 30px;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  outline: none;
+  display: flex;
+}
+
+.btn:hover{
+  border-color: #EA2027;
+  background-color: #EA2027;
+  cursor: pointer;
+}
+.form-signup {
+  display: none;
+}
+*{
+  font-family: 'Lexend Deca', sans-serif;
+  scroll-behavior: smooth;
+  transition: all .5s;
+}
+
+*::selection{
+  color: black;
+  background-color: #EA2027;
+}
+h5{
+  font-weight: 500;
+  font-size: 1em;
+  color: white;
+  margin-bottom: .5em;
+  margin-top: 5px;
+}
+
+h5, label{
+  align-items: flex-start;
+}
+input{
+  background: none;
+  text-align: center;
+  border: 2px solid white;
+  padding: 14px 14px;
+  width: 200px;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  outline: none;
+}
+
+input:focus{
+  width: 280px;
+  border-color: #00ff88;
+  transition: 0.25s;
+}
+
+input::selection{
+  color:black;
+  background-color: #00ff88;
+}
+.btn-box{
+  display: flex;
+  justify-content: space-between;
+}
+body{
+  background-color:white;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1::selection, h5::selection{
+  color: black;
+  background-color: #EA2027;
 }
