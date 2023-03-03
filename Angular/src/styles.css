@@ -1,0 +1,151 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+*{
+  padding: 0;
+  transition: all .2s;
+  accent-color: #334981;
+  caret-color: #1d2b4e;
+  scroll-behavior: smooth;
+}
+
+*::selection{
+  background-color: #1d2b4e;
+  color: white;
+}
+
+body{
+  background-color: rgb(32, 32, 32);
+  /* font-family: sans-serif; */
+  font-family: 'Fira Code', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.screen{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-left, .div-right{
+  width: 49vw;
+  height: 95vh;
+  border: solid 2px transparent;
+}
+
+.div-left{
+  border-radius: 10px 0 0 10px;
+  background-color: #1d2b4e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  margin: 0;
+}
+
+.div-left-img{
+  width: 50px;
+  height: 50px;
+}
+
+.div-right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 10px 10px 0;
+  background-color: #1d2b4e;
+  background-color: white;
+  text-align: center;
+  color: #1d2b4e;
+  gap: 2rem;
+}
+
+.div-right-content{
+  color: black;
+  border-top: solid 1px #8c8c8c;
+  padding: 1rem 5rem;
+  font-size: 13px;
+}
+
+button{
+  color: white;
+  cursor: pointer;
+  font-size: 19px;
+  width: 10rem;
+  background-color: #1d2b4e;
+  border: solid transparent;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+button:hover{
+  background-color: #334981;
+  transition: all .2s;
+}
+
+
+/* TELA DE LOGIN */
+
+.input-box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.input-box .organizador{
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#tela3 .input-box .organizador{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label{
+  font-weight: bold;
+}
+
+input{
+  padding: 0;
+  margin: 0;
+  height: 2rem;
+  width: 80%;
+  padding: 0 10px;
+  font-size: 15px;
+  border: solid 3px;
+  border-radius: 10px;
+  outline: none;
+  font-weight: bold;
+}
+
+input:focus{
+  border: solid 3px #1d2b4e;
+}
+
+.btn-box{
+  width: 80%;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+#tela2, #tela3{
+  display: none;
+}
+/* .p1{
+  display: none;
+} */
