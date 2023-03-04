@@ -9,10 +9,24 @@
 </head>
 <body>
   <div class="container">
-		<div class="imagem">
-			<img src="Marcas UFRPE-04 (Médio) (Pequeno).png" alt="Imagem" width="500" height="300" alt="Imagem">
-		</div>
-		<div class="conteudo">
+    <div id="form-login" class="form-login">
+
+      <h1>Login</h1>
+      <h5>Email</h5>
+      <input name="login-email" type="text" placeholder="example@example.com">
+      <h5>Password</h5>
+      <input id="password" name="login-password" type="password" placeholder="**********">
+
+      <div class="btn-box">
+          <button class="btn" id="btn-login" type="submit" onclick="finish()">Login</button>
+          <button class="btn" id="btn-showsignup" onclick="showSignup()">Sign Up</button>
+      </div>
+      
+  </div>
+		<div id ="form-signup" class="form-signup">
+      <div class="imagem">
+        <img src="Marcas UFRPE-04 (Médio) (Pequeno).png" alt="Imagem" width="500" height="300" alt="Imagem">
+      </div>
 			<div class="box-login">
 				<h1 class="title_login"><i class="icon icon-key-1"></i> Formulário de atendimento psicológico da UABJ - Discente</h1>
 				<form action="#" method="post" class="form login">
@@ -52,4 +66,6 @@
 		</div><!--conteudo-->
 	</div><!--container-->
 </body>
+<script type="text/javascript" src="main.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </html>
