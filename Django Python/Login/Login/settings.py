@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'polls.apps.PollsConfig',
 ]
 
 MIDDLEWARE = [
@@ -78,17 +79,37 @@ WSGI_APPLICATION = 'Login.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#   'default': {
+#     'ENGINE': 'django.db.backends.mysql',
+#     'NAME': env('DB_NAME'),
+#     'HOST': env('DB_HOST'),
+#     'PORT': env('DB_PORT'),
+#     'USER': env('DB_USER'),
+#     'PASSWORD': env('DB_PASSWORD'),
+#     'OPTIONS': {'charset': 'utf8mb4','ssl': {'ca': env('MYSQL_ATTR_SSL_CA'), 'CAPath': env('MYSQL_ATTR_SSL_CAPATH')}}
+#     }
+#}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': 'mydatabase.db',
+#     }
+# }
+
 DATABASES = {
   'default': {
-    'ENGINE': 'django.db.backends.mysql',
-    'NAME': env('DB_NAME'),
-    'HOST': env('DB_HOST'),
-    'PORT': env('DB_PORT'),
-    'USER': env('DB_USER'),
-    'PASSWORD': env('DB_PASSWORD'),
-    'OPTIONS': {'charset': 'utf8mb4','ssl': {'ca': env('MYSQL_ATTR_SSL_CA'), 'CAPath': env('MYSQL_ATTR_SSL_CAPATH')}}
-    }
+    'ENGINE': 'django.db.backends.postgresql',
+    'NAME': 'neondb',
+    'USER': 'Velky07',
+    'PASSWORD': 'Ajkfna63PWXb',
+    'HOST': 'ep-orange-butterfly-817682.us-east-2.aws.neon.tech',
+    'PORT': '5432',
+  }
 }
+
+
+
 
 
 # Password validation
