@@ -1,0 +1,28 @@
+*{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header{
+  margin: 0;
+  background-color: blueviolet;
+  width: 100vw;
+  border: solid 0px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+ul{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+li{
+  cursor: pointer;
+}
