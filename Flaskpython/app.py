@@ -1,31 +1,21 @@
-from flask import Flask
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route('/')
 def index():
-    return "testando"
+    return render_template('index.html')
+
+@app.route('/agendar', methods=['POST'])
+def agendar():
+    nome = request.form['nome']
+    email = request.form['email']
+    telefone = request.form['telefone']
+    data = request.form['data']
+    horario = request.form['horario']
+    # salve os dados do agendamento no banco de dados
+    return render_template('confirmacao.html', nome=nome, data=data, horario=horario)
+
 
 if __name__ == '__main__':
-    app.run()
-
-from flask import Flask, redirect, url_for, session
-from google.oauth2.credentials import Credentials
-from google_auth_oauthlib.flow import Flow
-from googleapiclient.errors import HttpError
-from googleapiclient.discovery import build
-import datetime
-
-app = Flask(__name__)
-app.secret_key = 'sua_chave_secreta_aqui'
-
-
-@app.route('/authorize')
-def authorize():
-    flow = Flow.from_client_secrets_file('credentials.json', scopes=['https://www.googleapis.com/auth/calendar.events'])
-    flow.redirect_uri = url_for('oauth2callback', _external=True)
-    authorization_url, state = flow.authorization_url(access_type='offline', include_granted_scopes='true')
-    session['state'] = state
-    return redirect(authorization_url)
-
-
+    app.run(debug=True)
