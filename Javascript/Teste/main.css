@@ -111,15 +111,6 @@ input::selection {
   cursor: pointer;
 }
 
-
-.form-signup {
-  display: none;
-}
-
-.form-login {
-  display: flex;
-}
-
 label {
   padding-top: 2px;
   color: #00ff88;
