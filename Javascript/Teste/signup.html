@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Sistema de Agendamento</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h1>Sistema de Agendamento para Atendimento Psicológico</h1>
+	</header>
+	<main>
+		<form>
+			<fieldset>
+				<legend>Dados do Paciente</legend>
+				<label for="nome">Nome Completo:</label>
+				<input type="text" id="nome" name="nome" required>
+				<label for="email">E-mail:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="telefone">Telefone:</label>
+				<input type="tel" id="telefone" name="telefone" required>
+			</fieldset>
+			<fieldset>
+				<legend>Dados do Atendimento</legend>
+				<label for="data">Data:</label>
+				<input type="date" id="data" name="data" required>
+				<label for="horario">Horário:</label>
+				<input type="time" id="horario" name="horario" required>
+				<label for="tipo">Tipo de Atendimento:</label>
+				<select id="tipo" name="tipo">
+					<option value="presencial">Presencial</option>
+					<option value="online">Online</option>
+				</select>
+				<label for="observacoes">Observações:</label>
+				<textarea id="observacoes" name="observacoes"></textarea>
+			</fieldset>
+			<input type="submit" value="Agendar">
+		</form>
+	</main>
+</body>
+<script src="main.js"></script>
+
+</html>
