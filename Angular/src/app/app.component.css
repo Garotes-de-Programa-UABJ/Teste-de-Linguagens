@@ -1,0 +1,80 @@
+body{
+  background-color: rgb(32, 32, 32);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  color: white;
+}
+
+.sem-componentes{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box{
+  width: 300px;
+  padding: 40px;
+  background-color: black;
+  text-align: center;
+  border-radius: 5px;
+}
+
+form h1{
+  color: rgb(255, 255, 255);
+  font-family:Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+form h1::selection{
+  color: black;
+  background-color: #EA2027;
+}
+
+.box input[type=text], .box input[type=password]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #EA2027;
+  padding: 14px 14px;
+  width: 200px;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  outline: none;
+
+}
+
+.box input[type=text]:focus , .box input[type=password]:focus {
+  width: 280px;
+  color: #0652dd;
+  caret-color: #0652dd;
+  border-color: #0652dd;
+}
+.box input[type=button]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #EA2027;
+  padding: 14px 40px;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  outline: none;
+
+}
+
+.box input[type=button]:hover{
+  border-color: #EA2027;
+  background-color: #EA2027;
+  cursor: pointer;
+}
