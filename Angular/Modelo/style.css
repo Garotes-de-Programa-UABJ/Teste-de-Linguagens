@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Tilt+Neon&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Tilt Neon', cursive;
+  transition: all .2s linear;
+  caret-color: #0c1729;;
+  scroll-behavior: smooth;
+  accent-color: red;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #201b2c00; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #172b4d;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #274883; 
+  transition: all .2s;
+}
+
+h1{
+  color: white;
+}
+
+h1::selection, form label::selection{
+  background-color: white;
+  color: #0c1729;
+}
+
+body{
+  padding: 2rem 0;
+  background-color: #0c1729;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+form{
+  padding: 2rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border: solid 1px transparent;
+  border-radius: 10px;
+  background-color: #172b4d;
+  outline: none;
+}
+
+label{
+  background-color: #172b4d;
+}
+
+/* form label::selection{
+  background-color: white;
+  color: #172b4d;
+  font-weight: bolder;
+} */
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=date],
+input[type=time],
+select{
+  padding: 0 1rem;
+  margin-top: 7px;
+  height: 35px;
+  border: solid 1px transparent;
+  border-radius: 10px;
+  background-color: #b9b9b9;
+  outline: none;
+  font-size: 17px;
+}
+
+input:focus{
+  background-color: white;
+  transition: all .5s linear;
+}
+
+input[type=file]{
+  margin-top: 7px;
+  display: none;
+}
+
+#file-label{
+  cursor: pointer;
+  text-decoration: underline;
+  color: #9abfff;
+}
+
+#file-label::after {
+  content: attr(data-file);
+  margin-left: 10px;
+}
+
+.btn-box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-agendar{
+  height: 40px;
+  width: 200px;
+  border: solid 0px;
+  border-radius: 10px;
+  background-color:#274883;
+  cursor: pointer;
+  color: white;
+  font-size: 17px;
+}
+
+.btn-agendar:hover{
+  background-color: #2c5db1;
+}
+
+@media only screen and (max-width: 950px){
+  body{
+    width: 100%;
+    padding: 2rem;
+  }
+  form{
+    width: 100vw;
+    font-size: 21px;
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=tel],
+  input[type=date],
+  input[type=time],
+  select{
+    height: 50px;
+  }
+}
