@@ -5,9 +5,16 @@
   transition: all .5s;
 }
 
+*::selection{
+  background-color: white;
+  color: #0c1729;
+  font-size: bolder;
+}
+
 header{
   margin: 0;
   width: 100vw;
+  height: 55px;
   border: solid 0px;
   border-radius: 5px;
   display: flex;
@@ -28,7 +35,7 @@ ul{
 
 li{
   cursor: pointer;
-  font-weight: bold;
+  /* font-weight: bold; */
   text-decoration: none;
   display: inline-block;
   position: relative;

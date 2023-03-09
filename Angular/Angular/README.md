@@ -1,9 +1,4 @@
-# TESTE DE LINGUAGENS
-
-![angular-logo-svg-vector](https://user-images.githubusercontent.com/84859510/222714375-fcd4431e-f69f-4374-8725-2dac23640015.svg)
-
-
-# TestAngular
+# TesteSprint1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
 

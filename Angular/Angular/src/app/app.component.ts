@@ -6,11 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'testAngular';
-
-  visivel: boolean = true;
+  title = 'teste_sprint1';
 }
 
-export class MeuComponente {
-  showElement = false;
-}
+// function mostrarSenha(): void {
+//   const senha = document.getElementById("senha") as HTMLInputElement;
+//   if (senha.type === "password") {
+//     senha.type = "text";
+//   } else {
+//     senha.type = "password";  
+//   }
+// }
