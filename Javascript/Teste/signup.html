@@ -6,11 +6,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="https://www.ufrpe.br/sites/www.ufrpe.br/files/brasao.png" type="image/png">
+
 </head>
 <body>
 	<header>
 		<h1>Sistema de Agendamento para Atendimento Psicológico</h1>
 	</header>
+	<button onclick="alternarModo()" id="botao" class="botao">Dark Mode</button>
 	<div id="form-signup" class="form-signup">
 		<form>
 			<fieldset>
@@ -24,6 +27,14 @@
 				<button type="submit" onclick="mostrar_senha()">Mostrar senha</button>
 				<label for="telefone">Telefone:</label>
 				<input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX">
+				<label for="tipo">Curso:</label>
+				<select id="tipo" name="tipo">
+					<option value="none">None</option>
+					<option value="submit">Engenharia de Controle e Automação</option>
+					<option value="submit">Engenharia da Computação</option>
+					<option value="submit">Engenharia Química</option>
+					<option value="submit">Engenharia Hídrica</option>
+				</select>
 			</fieldset>
 			<fieldset>
 				<legend>Dados do Atendimento</legend>
@@ -32,9 +43,9 @@
 				<label for="horario">Horário:</label>
 				<input type="time" id="horario" name="horario" required>
 				<label for="tipo">Tipo de Atendimento:</label>
-				<select id="tipo" name="tipo">
-					<option value="presencial">Presencial</option>
-					<option value="online">Online</option>
+				<select id="sub" name="sub">
+					<option value="submit">Presencial</option>
+					<option value="submit">Online</option>
 				</select>
 				<label for="observacoes">Observações:</label>
 				<textarea id="observacoes" name="observacoes"></textarea>
