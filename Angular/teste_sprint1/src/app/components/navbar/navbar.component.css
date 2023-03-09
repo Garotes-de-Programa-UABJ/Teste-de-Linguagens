@@ -59,3 +59,8 @@ li:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+a{
+  color: white;
+  text-decoration: none;
+}
