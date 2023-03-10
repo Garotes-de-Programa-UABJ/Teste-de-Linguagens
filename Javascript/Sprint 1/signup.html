@@ -20,6 +20,8 @@
 				<legend>Dados do Paciente</legend>
 				<label for="nome">Nome Completo:</label>
 				<input type="text" id="nome" name="nome" required placeholder="Nome completo">
+				<label for="nome">CPF:</label>
+				<input type="cpf" id="cpf" name="cpf" required placeholder="CPF">
 				<label for="email">E-mail:</label>
 				<input type="email" id="email" name="email" required placeholder="Email@ufrpe.br">
 				<label for="senha">Senha:</label>
@@ -39,9 +41,9 @@
 			<fieldset>
 				<legend>Dados do Atendimento</legend>
 				<label for="data">Data:</label>
-				<input type="date" id="data" name="data" required>
+				<input type="data" id="data" name="data" required>
 				<label for="horario">Horário:</label>
-				<input type="time" id="horario" name="horario" required>
+				<input type="horario" id="horario" name="horario" required>
 				<label for="tipo">Tipo de Atendimento:</label>
 				<select id="sub" name="sub">
 					<option value="submit">Presencial</option>
@@ -54,5 +56,13 @@
 		</form>
 	</div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 <script src="main.js"></script>
+<script>
+$('#telefone').mask('(00) 00000-0000');
+$('#data').mask('00/00/0000');
+$('#horario').mask('00:00:00');
+$('#cpf').mask('000.000.000-00', {reverse: true});
+</script>
 </html>
