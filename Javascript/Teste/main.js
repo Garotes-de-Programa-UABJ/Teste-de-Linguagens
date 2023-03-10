@@ -11,6 +11,7 @@ const horario = document.getElementById('horario');
 const tipo = document.getElementById('tipo');
 const sub = document.getElementById('sub');
 const observacoes = document.getElementById('observacoes');
+const bota = document.getElementById('bota');
 
 // Adiciona um evento de envio ao formulário
 form.addEventListener('submit', function (event) {
@@ -60,6 +61,7 @@ function alternarModo() {
     var tipo = document.getElementById('tipo');
     var observacoes = document.getElementById('observacoes');
     var sub = document.getElementById('sub');
+    var bota = document.getElementById('bota');
 
     nome.style.backgroundColor = "#40414F";
     senha.style.backgroundColor = "#40414F";
@@ -70,6 +72,9 @@ function alternarModo() {
     tipo.style.backgroundColor = "#40414F";
     observacoes.style.backgroundColor = "#40414F";
     sub.style.backgroundColor = "#40414F";
+    bota.style.backgroundColor = "black";
+    bota.style.color = "whitesmoke";
+    bota.style.borderColor = "whitesmoke";
 
     document.getElementById("botao").innerHTML = "Light Mode";
 
@@ -87,6 +92,7 @@ function alternarModo() {
     var tipo = document.getElementById('tipo');
     var observacoes = document.getElementById('observacoes');
     var sub = document.getElementById('sub');
+    var bota = document.getElementById('bota');
 
 
     nome.style.backgroundColor = "";
@@ -98,6 +104,9 @@ function alternarModo() {
     tipo.style.backgroundColor = "";
     observacoes.style.backgroundColor = "";
     sub.style.backgroundColor = "";
+    bota.style.backgroundColor = "";
+    bota.style.color = ""
+    bota.style.borderColor = "";
 
     document.getElementById("botao").innerHTML = "Dark Mode"; 
     
