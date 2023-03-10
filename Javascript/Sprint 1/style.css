@@ -69,7 +69,7 @@ input[type="submit"]:hover {
 button{
 	margin-bottom: 20px;
 }
-.botao {
+.bot {
   background-color: #103982;
   color: #fff;
   border: none;
@@ -77,9 +77,9 @@ button{
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-	margin: 11px;
+	margin: 10px;
 }
 
-.botao:hover {
+.bot:hover {
   background-color: #103982;
 }

@@ -75,8 +75,8 @@ function alternarModo() {
     bota.style.backgroundColor = "black";
     bota.style.color = "whitesmoke";
     bota.style.borderColor = "whitesmoke";
-
-    document.getElementById("botao").innerHTML = "Light Mode";
+    
+    document.getElementById("bot").innerHTML = "Light Mode";
 
   } else {
 
@@ -95,6 +95,7 @@ function alternarModo() {
     var bota = document.getElementById('bota');
 
 
+
     nome.style.backgroundColor = "";
     senha.style.backgroundColor = "";
     email.style.backgroundColor = "";
@@ -108,7 +109,7 @@ function alternarModo() {
     bota.style.color = ""
     bota.style.borderColor = "";
 
-    document.getElementById("botao").innerHTML = "Dark Mode"; 
+    document.getElementById("bot").innerHTML = "Dark Mode"; 
     
   }
 }
