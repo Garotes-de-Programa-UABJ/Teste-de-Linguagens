@@ -1,0 +1,102 @@
+/* Definições de estilo para o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para o contêiner principal */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para a logo da UFRPE */
+.logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Estilo para o título principal */
+h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #003399;
+}
+
+/* Estilo para os campos de entrada */
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Estilo para o botão de envio */
+button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0066cc;
+}
+
+/* Estilo para mensagens de erro */
+input:invalid,
+textarea:invalid {
+  border-color: #ff6666;
+}
+
+input:invalid:focus,
+textarea:invalid:focus {
+  outline: none;
+}
+
+.error-message {
+  color: #66a3ff;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Estilo para mensagens de sucesso */
+.success-message {
+  color: #00cc66;
+  font-size: 14px;
+  margin-top: 5px;
+}
