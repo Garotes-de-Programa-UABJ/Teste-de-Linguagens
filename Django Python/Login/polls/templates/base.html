@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        {% include 'theme_switcher.html' %}
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p></p>
+    </footer>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
