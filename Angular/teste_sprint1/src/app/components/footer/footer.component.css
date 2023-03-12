@@ -1,0 +1,19 @@
+body{
+  background-color: #1D2B4E;
+}
+
+footer{
+  border: solid 0px;
+  border-radius: 5px 0 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  /* bottom: 0; */
+  
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}

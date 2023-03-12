@@ -1,0 +1,15 @@
+div{
+  height: 520px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradient {
+  font-size: 15rem;
+  background-size: 100%;
+  background: linear-gradient(to right, #FF0018, #FFA52C, #FFFF41, #008018, #0000F9, #86007D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

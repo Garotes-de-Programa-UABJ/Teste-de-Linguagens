@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro de Apoio Psicológico - UFRPE (UABJ)</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Importação da folha de estilo CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Cadastro de Apoio Psicológico - UFRPE - (UABJ) </h1>
+		<form id="cadastro-form">
+			<label for="nome">Nome Completo:</label>
+			<input type="text" id="nome" name="nome" required>
+            
+            <label for="nome social">Nome Social:</label>
+			<input type="text" id="nomesocial" name="nomesocial">
+
+            <label for="CPF">CPF:</label>
+			<input type="text" id="CPF" name="CPF" required>
+
+			<label for="email">E-mail:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="telefone">Telefone:</label>
+			<input type="tel" id="telefone" name="telefone" required>
+
+			<label for="curso">Curso:</label>
+			<select id="curso" name="curso" required>
+				<option value="" selected disabled>Selecione seu curso</option>
+				<option value="Engenharia da Computação">Engenharia da Computação</option>
+				<option value="Engenharia de Controle e Automação">Engenharia de Controle e Automação</option>
+				<option value="Engenharia Química">Engenharia Química</option>
+				<option value="Engenharia Hídrica">Engenharia Hídrica</option required>
+			</select>
+
+			<label for="motivo">Descreva em poucas palavras qual o motivo da solicitação do atendimento</label>
+			<textarea id="motivo" name="motivo" required></textarea>
+
+			<label for="preferencia">Preferência de horário para atendimento:</label>
+			<input type="text" id="preferencia" name="preferencia" placeholder="Ex: Segunda-feira à tarde" required>
+
+            <label for="cartao_vacina">Cartão de Vacina (COVID-19):</label>
+            <input type="file" id="cartao_vacina" name="cartao_vacina" accept=".pdf,.jpg,.jpeg,.png" required>
+
+			
+            <label for="concordancia">
+				<input type="checkbox" id="concordancia" name="concordancia" required>
+				<span>Eu concordo com os termos e condições</span>
+			</label>
+
+			<button type="submit">Enviar</button>
+		</form>
+	</div>
+</body>
+</html>
