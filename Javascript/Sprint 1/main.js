@@ -102,7 +102,7 @@ function alternarModo() {
 
   }
 }
-// Faz o texto oculto da senha ficar visível
+// Faz o texto oculto da senha ficar visível.
 function mostrar_senha(){
   var senha = document.getElementById("senha");
   if (senha.type == "password"){
