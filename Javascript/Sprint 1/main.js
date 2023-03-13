@@ -102,6 +102,16 @@ function alternarModo() {
 
   }
 }
+// Faz o texto oculto da senha ficar visível
+function mostrar_senha(){
+  var senha = document.getElementById("senha");
+  if (senha.type == "password"){
+    senha.type = "text";
+  }else{
+  senha.type = "password";  
+  }
+}
+
 // Adiciona uma máscara para limitar o preenchimento de alguns campos
 $('#telefone').mask('(00) 00000-0000');
 $('#data').mask('00/00/0000');
