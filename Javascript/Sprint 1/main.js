@@ -107,3 +107,12 @@ $('#telefone').mask('(00) 00000-0000');
 $('#data').mask('00/00/0000');
 $('#horario').mask('00:00');
 $('#cpf').mask('000.000.000-00', { reverse: true });
+
+function showPassword() {
+  var passwordField = document.getElementById("password");
+  if (passwordField.type === "password") {
+    passwordField.type = "text";
+  } else {
+    passwordField.type = "password";
+  }
+}
