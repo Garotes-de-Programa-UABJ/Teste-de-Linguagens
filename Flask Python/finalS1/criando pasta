@@ -1,1 +1,17 @@
+Flask é um framework web em Python que permite criar aplicativos web de forma rápida e fácil. Ele fornece ferramentas para lidar com rotas de URL, templates HTML, 
+sessões, cookies, autenticação, entre outras funcionalidades. Tmabém é  é amplamente utilizado em projetos de pequeno a médio porte e é conhecido por sua simplicidade
+e facilidade de uso.
+
+
+Vantagens:
+
+permite criar aplicações web rapidamente com poucas linhas de código;
+documentação clara, objetiva e organizada;
+leve, rápido e de bom desempenho.
+
+Desvantagem 
+
+não tem recursos integrados para gerenciamento de banco de dados ou autenticação de usuários.
+
+
 
