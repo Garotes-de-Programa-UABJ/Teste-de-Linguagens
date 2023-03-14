@@ -3,7 +3,7 @@ import sqlite3
 
 #Importa os módulos necessários para a aplicação Flask, incluindo a classe Flask, render_template para renderização de templates HTML e sqlite3 para trabalhar com um banco de dados SQLite.
 
-app = Flask(__name__)
+app = Flask("finalS1")
 
 #Cria uma instância do objeto Flask para a aplicação.
 
