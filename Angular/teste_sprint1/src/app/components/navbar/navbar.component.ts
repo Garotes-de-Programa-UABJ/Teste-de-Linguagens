@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-navbar',
@@ -6,5 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  
+  // bloco para criar o 'warning'
+
+  title = 'Página indisponível'
+  
+  constructor(private toastr: ToastrService) {}
+
+  showWarning(){
+  this.toastr.warning('DESCULPE HUMENO', 'PÁGINA INDISPONÍVEL',{
+    progressBar: true,
+    positionClass: 'toast-bottom-right'
+  })
+  } 
 
 }
