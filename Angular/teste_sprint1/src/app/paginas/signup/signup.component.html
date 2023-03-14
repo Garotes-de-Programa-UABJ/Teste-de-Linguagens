@@ -12,21 +12,26 @@
     </div>
 
     <div class="input-field">
+      <!-- 'autocomplete="off"' impede que abra uma janelinha com sygrstões ao clicar no imput -->
+      <label for="email">Confirmar E-mail:</label>
+      <input class="email" type="email" autocomplete="off" placeholder="example@example.com" ><br>
+    </div>
+
+    <div class="input-field">
       <label for="senha">Senha:</label>
       <input class="senha" id="senha" type="password" name="senha" placeholder="***************" ><br>
     </div>
-<!--
-      <div class="custom-checkbox">
-        <input type="checkbox" id="showpassword" onclick="mostrarSenha()">
-        <label for="showpassword">Mostrar Senha</label>
-      </div> -->
 
-      <a href="" class="btn-esqueci">Esqueci a senha</a>
-      <a href="/signup" class="btn-criar">Criar conta</a>
+    <div class="input-field">
+      <label for="senha">Confirmar Senha:</label>
+      <input class="senha" id="senha" type="password" name="senha" placeholder="***************" ><br>
+    </div>
+
+      <a href="/login" class="btn-criar">Já possuo uma conta</a>
 
       <div class="btn-box">
           <!-- <button class="btn-entrar" type="submit" value="Entrar">Entrar</button> -->
-          <a href="/principal" class="btn-entrar">Entrar</a>
+          <a href="/login" class="btn-entrar">Confirmar</a>
       </div>
   </form>
 </div>
